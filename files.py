@@ -6,7 +6,7 @@ df = st.file_uploader('Upload the CSV file : ', type=['csv','xlsx'])
 
 
 st.subheader('Displaying the CSV file')
-df = pd.read_csv('/Users/Ankush/Desktop/Data Science/Streamlit/Products.csv')
+df = pd.read_csv('Products.csv')
 
 if df is not None:
     st.table(df.head())
@@ -18,7 +18,7 @@ if img_file is not None:
     st.image(img_file)
 
 st.subheader('Displaying the images directly')
-st.image('/Users/Ankush/Desktop/Data Science/Streamlit/img.png')
+st.image('img.png')
 
 
 st.subheader('Working with video files')
